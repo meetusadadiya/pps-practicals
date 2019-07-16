@@ -1,0 +1,21 @@
+// 27. Write a C program to find 1+1/2!+1/3!+1/4!+.....+1/n!.
+
+#include <stdio.h>
+
+int main()
+{
+    int n = 9, i, j, fact = 1;
+    float sum = 0;
+
+    for (i = 1; i <= n; i++)
+    {
+        fact = 1;
+        for (j = i; j > 0; j--)
+        {
+            fact = fact * j;
+        }
+        sum = sum + ((1.0 * i) / fact);
+    }
+    printf("\n Sum of Series = %f", sum);
+    return 0;
+}
