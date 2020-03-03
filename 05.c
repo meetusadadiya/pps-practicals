@@ -5,10 +5,12 @@
 
 int main()
 {
-    float F, C;
-    printf("Enter Temperature in Celsius : ");
-    scanf("%f", &C);
-    F = (C * 1.8) + 32;
-    printf("\n %.2f Celsius = %.2f Fahrenheit", C, F);
+    float km;
+    printf("Enter Length in KiloMeter : ");
+    scanf("%f", &km);
+    printf("\n %f KM = %f Meters", km, km * 1000);
+    printf("\n %f KM = %f Feets", km, km * 3280.84);
+    printf("\n %f KM = %f Inches", km, km * 39370.08);
+    printf("\n %f KM = %f Centimeters", km, km * 1000 * 100);
     return 0;
 }
